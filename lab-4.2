@@ -1,0 +1,15 @@
+#/bin/sh
+echo "Enter Number to find Fibonacci series upto"
+read f
+a=0
+b=1
+i=1
+echo “$a”
+echo “$b”
+while [ $i -le $f ]
+do
+echo "\t$i\n"
+a=$b
+b=$i
+i=$((a+b))
+done
